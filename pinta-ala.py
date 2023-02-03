@@ -1,13 +1,24 @@
-def main():
-    rivi = input("Anna nelion sivun pituus (cm): ")
-    sivu = float(rivi)
-    while sivu < 0:
-        print("Sivun pituus ei saa olla negatiivinen!")
-        rivi = input("Anna sivun pituus (cm): ")
-        rivi = input("Anna sivun pituus (cm): ")
-        sivu = float(rivi)
-        sivu = float(rivi)
-    ala = sivu * sivu
-    print("Nelion pinta-ala on", ala, "cm2.")
+# Piirin laskeminen
 
-main()
+# Neliön sivujen pituus:
+
+a = 8 
+b = 8 
+c = 8
+d = 8 
+
+def piiri(sivut, yksikko):
+    piiri = 0
+    for sivu in sivut:
+        piiri += sivu
+    return ('p=' +str(piiri) + ' ' + yksikko)
+
+print(piiri((8, 8, 8, 8), 'cm'))        
+
+# Pinta-alan laskwminen
+
+a = 8 
+b = 8 
+c = 8
+d = 8 
+
